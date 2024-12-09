@@ -115,7 +115,7 @@ button:focus-visible {
   height: 534px;
   width: 1140px;
   margin: auto;
-  margin-top: 133px;
+  margin-top: 200px;
 }
 
 /* форма */
@@ -174,21 +174,21 @@ input::placeholder {
 
 input[type="checkbox"] + .search-form__pseudo-checkbox {
   display: inline-block;
+  position: relative;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
   cursor: pointer;
-  position: relative;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 1px;
-  left: 1px;
   width: 15px;
   height: 15px;
   background-color: #fff;
+  top: 1px;
+  left: 1px;
 }
 
 .search-form__label {
@@ -313,3 +313,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   inset: 0;
   z-index: 1;
 }
+
+
+/* убрать absolute */
