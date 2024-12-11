@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,7 +19,6 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  height: 1vh;
 }
 
 h1,
@@ -54,11 +56,6 @@ ol {
 
 video:focus {
   outline: none;
-}
-
-video:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 0px;
 }
 
 .result__video-container {
@@ -113,7 +110,6 @@ button:focus-visible {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  height: 534px;
   width: 1140px;
   margin: auto;
   margin-top: 270px;
@@ -150,7 +146,6 @@ input::placeholder {
 }
 
 .search-form__fieldset {
-  height: 53px;
   border: 0;
 }
 
@@ -171,10 +166,11 @@ input::placeholder {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  padding-bottom: 4px;
 }
 
 input[type="checkbox"] + .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   position: relative;
   width: 19px;
   height: 19px;
@@ -219,17 +215,21 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   overflow: auto;
 }
 
-.content__list::-webkit-scrollbar {
+/* .content__list::-webkit-scrollbar {
   display: none;
 }
 
 .content__list {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+} */
 
 .content__list-item {
   margin-bottom: 34px;
+}
+
+.content__list-item:last-child {
+  margin: 0;
 }
 
 .content__details {
@@ -249,6 +249,12 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   text-transform: uppercase;
 }
 
+.content__video-card-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .content__accent {
   color: #545050;
 }
@@ -262,10 +268,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card-description-container {
-  width: 200px;
+  flex-grow: 1;
 }
 
 .content__video-card-description {
@@ -314,6 +321,3 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   inset: 0;
   z-index: 1;
 }
-
-
-/* убрать absolute */
