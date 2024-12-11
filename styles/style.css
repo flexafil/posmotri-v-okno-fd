@@ -179,7 +179,7 @@ input[type="checkbox"] + .search-form__pseudo-checkbox {
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -223,6 +223,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   -ms-overflow-style: none;
   scrollbar-width: none;
 } */
+
+/* у нас в макете скроллбара нет (https://www.figma.com/design/QHcvX1RsUI89CulRB7HLk6/%234-%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8-%D0%B2-%D0%BE%D0%BA%D0%BD%D0%BE?node-id=0-1&node-type=canvas&t=0Gj06Qp9ZTUUTLjw-0) */
 
 .content__list-item {
   margin-bottom: 34px;
