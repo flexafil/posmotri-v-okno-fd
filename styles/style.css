@@ -311,11 +311,3 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
 .more-button {
   width: 100%;
 }
-
-/* прелоадер */
-
-.preloader {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
