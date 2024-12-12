@@ -170,7 +170,8 @@ input::placeholder {
 
 input[type="checkbox"] + .search-form__pseudo-checkbox {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -179,12 +180,9 @@ input[type="checkbox"] + .search-form__pseudo-checkbox {
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
   width: 15px;
   height: 15px;
   background-color: #fff;
-  top: 1px;
-  left: 1px;
 }
 
 .search-form__label {
