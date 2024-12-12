@@ -1,1 +1,1 @@
-https://github.com/flexafil/posmotri_v_okno
+https://github.com/flexafil/posmotri-v-okno-fd
