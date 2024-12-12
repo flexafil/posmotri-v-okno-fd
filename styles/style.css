@@ -314,7 +314,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
 
 /* прелоадер */
 
-.preloader-template {
+.preloader {
   position: absolute;
   inset: 0;
   z-index: 1;
